@@ -21,13 +21,11 @@ Requests are form encoded (they use PHP on the server side), with two required, 
 Requests are sent to the admiral's "home server", with the path prefix **/kcsapi/**.
 
 ### Responses
-Responses are JSON encoded, Unicode characters are escaped, and it's all prefixed with "svdata=". The data is embedded in an "envelope", looking something like:
+Responses are JSON encoded, Unicode characters are escaped, and it's all prefixed with "svdata=". The data is embedded in an "envelope", looking something like this (spaces added for readability):
 
-`{
-	"api_result": 1,
-	"api_result_msg": "\u6210\u529f",
-	"api_data": ...
-}`
+`svdata={ "api_result": 1, "api_result_msg": "\u6210\u529f", "api_data": ... }`
+
+**api_result** is the response code (see below); 1 means success, anything else failure
 
 **api_data** is usually used for the response data, though there are exceptions (gah) where this variable is named something else, and even ones with multiple variables for response data.
 
