@@ -34,7 +34,7 @@ Return all the member's shipgirls and fleets
 			api_sortno: int (The number on the card),
 			api_ship_id: int (ID of the ship type),
 			api_lv: int (Ship level),
-			api_exp: [ ??? ] (An array of values),
+			api_exp: [ int (Total exp), int (Exp to next level), int (Percent to next level) ],
 			api_nowhp: int (Current hp),
 			api_maxhp: int (Max hp),
 			api_leng: int (Range),
