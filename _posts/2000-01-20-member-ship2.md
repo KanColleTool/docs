@@ -13,19 +13,16 @@ Returns information about all of your shipgirls.
 
 * Standard parameters
 
-```
-{
+```{
 	api_verno: 1,
 	api_token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-}
-```
+}```
 
 ### Response
 
 Return all the member's shipgirls and fleets
 
-```
-{
+```{
 	api_result: 1,
 	api_result_msg: 成功,
 	api_data: [
@@ -78,5 +75,4 @@ Return all the member's shipgirls and fleets
 		}
 		...
 	]
-}
-```
+}```
